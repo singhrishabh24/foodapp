@@ -11,7 +11,7 @@ app.use(express_1.default.json());
 app.use(express_1.default.urlencoded({ extended: true }));
 app.use((0, cors_1.default)());
 app.use("/images", express_1.default.static(path_1.default.join(__dirname, "../public/images")));
-app.get("/", (req, res) => {
+app.get("/", (_req, res) => {
     console.log(path_1.default.join(__dirname, "../public"));
     const foodData = [
         {

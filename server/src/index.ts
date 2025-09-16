@@ -9,12 +9,12 @@ app.use(cors());
 
 app.use("/images", express.static(path.join(__dirname, "../public/images")));
 
-app.get("/", (req, res) => {
+app.get("/", (_req, res) => {
   console.log(path.join(__dirname, "../public"));
   const foodData = [
     {
       name: "Boilded Egg",
-      price: 10,
+      price: 20,
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
       image: "/images/egg.png",
       type: "breakfast",
