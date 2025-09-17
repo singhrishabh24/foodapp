@@ -16,7 +16,7 @@ const SearchResult = ({ data }) => {
                   <h3>{name}</h3>
                   <p>{text}</p>
                 </div>
-                <Button>Rs.{price.toFixed(2)}</Button>
+                <Button>₹.{price.toFixed(2)}</Button>
               </div>
             </FoodCard>
           ))}
